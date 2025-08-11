@@ -22,6 +22,7 @@
     .form-floating input,
     .form-floating select {
       padding-left: 2.5rem;
+      /* margin-left: 20px; */
     }
     h2 {
       color: #7c3e0c;
@@ -30,6 +31,14 @@
       font-size: 0.875rem;
       color: red;
     }
+    #full-name-lable,#email-lable,#select-lable{
+      margin-left: 20PX;
+    }
+    #phone-lable{
+      margin-left: 20PX;
+    }
+
+    
   </style>
 </head>
 
@@ -63,21 +72,21 @@
           <div class="form-floating mb-3 position-relative">
             <i class="bi bi-person-fill"></i>
             <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
-            <label for="name">Full Name</label>
+            <label for="name" id="full-name-lable">Full Name</label>
             <div class="error-msg" id="nameError"></div>
           </div>
 
           <div class="form-floating mb-3 position-relative">
             <i class="bi bi-telephone-fill"></i>
             <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone Number" required pattern="[0-9]{10}">
-            <label for="phone">Phone Number</label>
+            <label for="phone" id="phone-lable">Phone Number</label>
             <div class="error-msg" id="phoneError"></div>
           </div>
 
           <div class="form-floating mb-3 position-relative">
             <i class="bi bi-envelope-fill"></i>
             <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
-            <label for="email">Email Address</label>
+            <label for="email" id="email-lable">Email Address</label>
             <div class="error-msg" id="emailError"></div>
           </div>
 
@@ -92,7 +101,7 @@
               <option value="Mehndi Party">Mehndi Party</option>
               <option value="Virtual Event Management">Virtual Event Management</option>
             </select>
-            <label for="type">Select:</label>
+            <label for="type" id="select-lable">Select:</label>
             <div class="error-msg" id="typeError"></div>
           </div>
 
